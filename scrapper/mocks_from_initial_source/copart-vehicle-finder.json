@@ -1,0 +1,910 @@
+{
+    "quickPicks": {
+        "VEHT": [
+            {
+                "itemName": "ATVs",
+                "uri": "atvs",
+                "searchQuery": "vehicle_type_code:VEHTYPE_A",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "Boats",
+                "uri": "boats",
+                "searchQuery": "vehicle_type_code:VEHTYPE_M",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "Forklifts",
+                "uri": "forklifts",
+                "searchQuery": "lot_features_code:LOTFEATURE_F1",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "Industrial Equipment",
+                "uri": "industrialequipment",
+                "searchQuery": "vehicle_type_code:VEHTYPE_E",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "Medium Duty / Box Trucks",
+                "uri": "mediumdutyboxtrucks",
+                "searchQuery": "vehicle_type_code:VEHTYPE_K",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "Pickup Trucks",
+                "uri": "pickuptrucks",
+                "searchQuery": "veh_cat_code:VEHCAT_P",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "Snowmobiles",
+                "uri": "snowmobiles",
+                "searchQuery": "vehicle_type_code:VEHTYPE_S",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "Trailers",
+                "uri": "trailers",
+                "searchQuery": "vehicle_type_code:VEHTYPE_L",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "Dirt Bikes",
+                "uri": "dirtbikes",
+                "searchQuery": "vehicle_type_code:VEHTYPE_D",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "Jet Skis",
+                "uri": "jetskis",
+                "searchQuery": "vehicle_type_code:VEHTYPE_J",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "RVs",
+                "uri": "recreationalvehicles",
+                "searchQuery": "vehicle_type_code:VEHTYPE_R",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "Automobiles",
+                "uri": "automobiles",
+                "searchQuery": "vehicle_type_code:VEHTYPE_V",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "Motorcycles",
+                "uri": "motorcycles",
+                "searchQuery": "vehicle_type_code:VEHTYPE_C",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "Heavy Duty Trucks",
+                "uri": "heavydutytrucks",
+                "searchQuery": "vehicle_type_code:VEHTYPE_U",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "Bus",
+                "uri": "bus",
+                "searchQuery": "vehicle_type_code:VEHTYPE_B",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "Agriculture and Farm equipment",
+                "uri": "agricultureandfarmequipment",
+                "searchQuery": "vehicle_type_code:VEHTYPE_F",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            },
+            {
+                "itemName": "Construction equipment",
+                "uri": "constructionequipment",
+                "searchQuery": "vehicle_type_code:VEHTYPE_N",
+                "quickPickCategoryUri": "vehicle-search-type",
+                "includeTagByField": "{!tag=VEHT}"
+            }
+        ],
+        "FETI": [
+            {
+                "itemName": "Classics",
+                "uri": "classics",
+                "searchQuery": "lot_year_date:[* TO NOW/YEAR-25YEARS]",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Featured Vehicles",
+                "uri": "featuredvehicles",
+                "searchQuery": "lot_features_code:LOTFEATURE_V",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Hot Items",
+                "uri": "hotitems",
+                "searchQuery": "lot_features_code:LOTFEATURE_X",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Municipal Fleet",
+                "uri": "municipalfleet",
+                "searchQuery": "seller_company_code:PRD",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "No License Required",
+                "uri": "nolicenserequired",
+                "searchQuery": "lot_features_code:LOTFEATURE_0",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Pure Sale",
+                "uri": "puresaleitems",
+                "searchQuery": "-on_approval:Y AND minimum_bid_amount:0",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Run and Drive",
+                "uri": "runanddrive",
+                "searchQuery": "lot_condition_code:CERT-D",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Exotics",
+                "uri": "exotics",
+                "searchQuery": "lot_features_code:EXOTIC",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Hybrid Vehicles",
+                "uri": "hybridvehicles",
+                "searchQuery": "lot_features_code:LOTFEATURE_H3",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Offsite Sales",
+                "uri": "offsitesales",
+                "searchQuery": "lot_features_code:LOTFEATURE_I",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Sealed Bid",
+                "uri": "sealedbidrepossessions",
+                "searchQuery": "sealed_bid_flag:true",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Rentals",
+                "uri": "rentals",
+                "searchQuery": "lot_features_code:rental",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Buy It Now",
+                "uri": "buyitnow",
+                "searchQuery": "buy_it_now_code:B1",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "New Items",
+                "uri": "newitems",
+                "searchQuery": "expected_sale_assigned_ts_utc:[NOW-2DAY TO NOW]",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Fleet / Lease",
+                "uri": "fleetlease",
+                "searchQuery": "loss_type_code:LOSSCODE_E",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Recovered Thefts",
+                "uri": "recoveredthefts",
+                "searchQuery": "loss_type_code:LOSSCODE_T",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Public and General Business",
+                "uri": "copartgo",
+                "searchQuery": "(seller_number:(*CT1 OR *CT2)) OR (go_app_user:*)",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Electric Vehicles",
+                "uri": "electricvehicles",
+                "searchQuery": "fuel_type_desc:ELECTRIC",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Copart Select",
+                "uri": "select",
+                "searchQuery": "copart_select_code:C",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Bank / Repossessed",
+                "uri": "bakrepossessed",
+                "searchQuery": "(loss_type_code:LOSSCODE_R OR seller_company_code:BANK) AND blucar_flag:true",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            },
+            {
+                "itemName": "Specialty Vehicles",
+                "uri": "specialtyvehicles",
+                "searchQuery": "vehicle_type_code:(VEHTYPE_K OR VEHTYPE_U OR VEHTYPE_L OR VEHTYPE_R OR VEHTYPE_E OR VEHTYPE_F OR VEHTYPE_B OR VEHTYPE_N) OR lot_features_code:LOTFEATURE_F1",
+                "quickPickCategoryUri": "vehicle-search-featured",
+                "includeTagByField": "{!tag=FETI}"
+            }
+        ],
+        "PRID": [
+            {
+                "itemName": "Biohazardous/Chemical",
+                "uri": "biohazardouschemical",
+                "searchQuery": "damage_type_code:DAMAGECODE_BC",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Burn - Engine",
+                "uri": "burnengine",
+                "searchQuery": "damage_type_code:DAMAGECODE_BE",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Burn",
+                "uri": "burn",
+                "searchQuery": "damage_type_code:DAMAGECODE_BN",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "All Over",
+                "uri": "allover",
+                "searchQuery": "damage_type_code:DAMAGECODE_AO",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Burn - Interior",
+                "uri": "burninterior",
+                "searchQuery": "damage_type_code:DAMAGECODE_BI",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Damage History",
+                "uri": "damagehistory",
+                "searchQuery": "damage_type_code:DAMAGECODE_DH",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Frame Damage",
+                "uri": "framedamage",
+                "searchQuery": "damage_type_code:DAMAGECODE_FD",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Front End",
+                "uri": "frontend",
+                "searchQuery": "damage_type_code:DAMAGECODE_FR",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Mechanical",
+                "uri": "mechanical",
+                "searchQuery": "damage_type_code:DAMAGECODE_MC",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Normal Wear",
+                "uri": "normalwear",
+                "searchQuery": "damage_type_code:DAMAGECODE_NW",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Rear End",
+                "uri": "rearend",
+                "searchQuery": "damage_type_code:DAMAGECODE_RR",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Side",
+                "uri": "side",
+                "searchQuery": "damage_type_code:DAMAGECODE_SD",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Top/Roof",
+                "uri": "toproof",
+                "searchQuery": "damage_type_code:DAMAGECODE_TP",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Vandalism",
+                "uri": "vandalism",
+                "searchQuery": "damage_type_code:DAMAGECODE_VN",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "DriveTrain Unk/Unable to Verify",
+                "uri": "drivetrainunkunabletoverify",
+                "searchQuery": "damage_type_code:DAMAGECODE_DU",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Hail",
+                "uri": "haildamage",
+                "searchQuery": "damage_type_code:DAMAGECODE_HL",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Partial/Incomplete Repair",
+                "uri": "partialincompleterepair",
+                "searchQuery": "damage_type_code:DAMAGECODE_PR",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Stripped",
+                "uri": "stripped",
+                "searchQuery": "damage_type_code:DAMAGECODE_ST",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Water/Flood",
+                "uri": "waterflood",
+                "searchQuery": "damage_type_code:DAMAGECODE_WA",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Rollover",
+                "uri": "rollover",
+                "searchQuery": "damage_type_code:DAMAGECODE_RO",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Undercarriage",
+                "uri": "undercarriage",
+                "searchQuery": "damage_type_code:DAMAGECODE_UN",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            },
+            {
+                "itemName": "Minor Dents/Scratches",
+                "uri": "minordentsscratches",
+                "searchQuery": "damage_type_code:DAMAGECODE_MN",
+                "quickPickCategoryUri": "vehicle-search-damage",
+                "includeTagByField": "{!tag=PRID}"
+            }
+        ],
+        "TITL": [
+            {
+                "itemName": "Non-repairable",
+                "uri": "nonrepairable",
+                "searchQuery": "title_group_code:TITLEGROUP_J",
+                "quickPickCategoryUri": "vehicle-search-title",
+                "includeTagByField": "{!tag=TITL}"
+            },
+            {
+                "itemName": "Salvage Title",
+                "uri": "salvagetitle",
+                "searchQuery": "title_group_code:TITLEGROUP_S",
+                "quickPickCategoryUri": "vehicle-search-title",
+                "includeTagByField": "{!tag=TITL}"
+            },
+            {
+                "itemName": "Clean Title",
+                "uri": "cleantitle",
+                "searchQuery": "title_group_code:TITLEGROUP_C",
+                "quickPickCategoryUri": "vehicle-search-title",
+                "includeTagByField": "{!tag=TITL}"
+            }
+        ],
+        "MAKE": [
+            {
+                "itemName": "Audi",
+                "uri": "audi",
+                "searchQuery": "lot_make_desc:AUDI",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Cadillac",
+                "uri": "cadillac",
+                "searchQuery": "lot_make_desc:CADILLAC",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Chrysler",
+                "uri": "chrysler",
+                "searchQuery": "lot_make_desc:CHRYSLER",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Ford",
+                "uri": "ford",
+                "searchQuery": "lot_make_desc:FORD",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Honda",
+                "uri": "honda",
+                "searchQuery": "lot_make_desc:HONDA",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Infiniti",
+                "uri": "infiniti",
+                "searchQuery": "lot_make_desc:INFINITI",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Kia",
+                "uri": "kia",
+                "searchQuery": "lot_make_desc:KIA",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Mazda",
+                "uri": "mazda",
+                "searchQuery": "lot_make_desc:MAZDA",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Mitsubishi",
+                "uri": "mitsubishi",
+                "searchQuery": "lot_make_desc:MITSUBISHI",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Pontiac",
+                "uri": "pontiac",
+                "searchQuery": "lot_make_desc:PONTIAC",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Suzuki",
+                "uri": "suzuki",
+                "searchQuery": "lot_make_desc:SUZUKI",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Volkswagen",
+                "uri": "volkswagen",
+                "searchQuery": "lot_make_desc:VOLKSWAGEN",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "BMW",
+                "uri": "bmw",
+                "searchQuery": "lot_make_desc:BMW",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Dodge",
+                "uri": "dodge",
+                "searchQuery": "lot_make_desc:DODGE",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Hyundai",
+                "uri": "hyundai",
+                "searchQuery": "lot_make_desc:HYUNDAI",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Lexus",
+                "uri": "lexus",
+                "searchQuery": "lot_make_desc:LEXUS",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Nissan",
+                "uri": "nissan",
+                "searchQuery": "lot_make_desc:NISSAN",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Toyota",
+                "uri": "toyota",
+                "searchQuery": "lot_make_desc:TOYOTA",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "GMC",
+                "uri": "gmc",
+                "searchQuery": "lot_make_desc:GMC",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Mercedes-Benz",
+                "uri": "mercedesbenz",
+                "searchQuery": "lot_make_desc:MERCEDES-BENZ",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Jeep",
+                "uri": "jeep",
+                "searchQuery": "lot_make_desc:JEEP",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Subaru",
+                "uri": "subaru",
+                "searchQuery": "lot_make_desc:SUBARU",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Chevrolet",
+                "uri": "chevrolet",
+                "searchQuery": "lot_make_desc:CHEVROLET",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Volvo",
+                "uri": "volvo",
+                "searchQuery": "lot_make_desc:VOLVO",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Harley",
+                "uri": "harley",
+                "searchQuery": "lot_make_desc:HARLEY-DAVIDSON",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Land Rover",
+                "uri": "landrover",
+                "searchQuery": "lot_make_desc:\"LAND ROVER\"",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Acura",
+                "uri": "acura",
+                "searchQuery": "lot_make_desc:ACURA",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Buick",
+                "uri": "buick",
+                "searchQuery": "lot_make_desc:BUICK",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Freightliner",
+                "uri": "freightliner",
+                "searchQuery": "lot_make_desc:FREIGHTLINER",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "International",
+                "uri": "international",
+                "searchQuery": "lot_make_desc:INTERNATIONAL",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Jaguar",
+                "uri": "jaguar",
+                "searchQuery": "lot_make_desc:JAGUAR",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Lincoln",
+                "uri": "lincoln",
+                "searchQuery": "lot_make_desc:LINCOLN",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Mini",
+                "uri": "mini",
+                "searchQuery": "lot_make_desc:MINI",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Polaris",
+                "uri": "polaris",
+                "searchQuery": "lot_make_desc:POLARIS",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Porsche",
+                "uri": "porsche",
+                "searchQuery": "lot_make_desc:PORSCHE",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Ram",
+                "uri": "ram",
+                "searchQuery": "lot_make_desc:RAM",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Yamaha",
+                "uri": "yamaha",
+                "searchQuery": "lot_make_desc:YAMAHA",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Hummer",
+                "uri": "hummer",
+                "searchQuery": "lot_make_desc:HUMMER",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Isuzu",
+                "uri": "isuzu",
+                "searchQuery": "lot_make_desc:ISUZU",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Lamborghini",
+                "uri": "lamborghini",
+                "searchQuery": "lot_make_desc:LAMBORGHINI",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Lotus",
+                "uri": "lotus",
+                "searchQuery": "lot_make_desc:LOTUS",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Maserati",
+                "uri": "maserati",
+                "searchQuery": "lot_make_desc:MASERATI",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Mclaren",
+                "uri": "mclarenautomotive",
+                "searchQuery": "lot_make_desc:\"MCLAREN AUTOMOTIVE\"",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Rolls-Royce",
+                "uri": "rollsroyce",
+                "searchQuery": "lot_make_desc:ROLLS-ROYCE",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Saab",
+                "uri": "saab",
+                "searchQuery": "lot_make_desc:SAAB",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Scion",
+                "uri": "scion",
+                "searchQuery": "lot_make_desc:SCION",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Tesla",
+                "uri": "tesla",
+                "searchQuery": "lot_make_desc:TESLA",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Vespa",
+                "uri": "vespa",
+                "searchQuery": "lot_make_desc:VESPA",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Datsun",
+                "uri": "datsun",
+                "searchQuery": "lot_make_desc:DATSUN",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Winnebago",
+                "uri": "winnebago",
+                "searchQuery": "lot_make_desc:WINNEBAGO",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "John Deere",
+                "uri": "johndeere",
+                "searchQuery": "lot_make_desc:JOHN%20DEERE",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Plymouth",
+                "uri": "plymouth",
+                "searchQuery": "lot_make_desc:PLYMOUTH",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Ducati",
+                "uri": "ducati",
+                "searchQuery": "lot_make_desc:DUCATI",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Hino",
+                "uri": "hino",
+                "searchQuery": "lot_make_desc:HINO",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Smart",
+                "uri": "smart",
+                "searchQuery": "lot_make_desc:SMART",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Bentley",
+                "uri": "bentley",
+                "searchQuery": "lot_make_desc:BENTLEY",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Alfa romeo",
+                "uri": "alfaromeo",
+                "searchQuery": "lot_make_desc:ALFA%20ROMEO",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Genesis",
+                "uri": "genesis",
+                "searchQuery": "lot_make_desc:GENESIS",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Mack",
+                "uri": "mack",
+                "searchQuery": "lot_make_desc:MACK",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Oldsmobile",
+                "uri": "oldsmobile",
+                "searchQuery": "lot_make_desc:OLDSMOBILE",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Saturn",
+                "uri": "saturn",
+                "searchQuery": "lot_make_desc:SATURN",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Kawasaki",
+                "uri": "kawasaki",
+                "searchQuery": "lot_make_desc:KAWASAKI",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Fiat",
+                "uri": "fiat",
+                "searchQuery": "lot_make_desc:FIAT",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Mercury",
+                "uri": "mercury",
+                "searchQuery": "lot_make_desc:MERCURY",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            },
+            {
+                "itemName": "Ferrari",
+                "uri": "ferrari",
+                "searchQuery": "lot_make_desc:FERRARI",
+                "quickPickCategoryUri": "vehicle-search-make",
+                "includeTagByField": "{!tag=MAKE}"
+            }
+        ]
+    }
+}

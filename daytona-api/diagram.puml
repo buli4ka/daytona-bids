@@ -1,0 +1,138 @@
+@startuml diagram 
+
+class Auction {
+    +Id: Guid
+    +Name: string
+}
+
+class Lot {
+    +Id: Guid
+    +AuctionId: int
+    +LotNumber: int
+    +DatePlaced: DateTime
+    +EndDate: DateTime
+}
+
+class SaleInfo {
+    +Id: Guid
+    +SaleStatus: string
+    +RetailPrice: money
+    +SaleDate: DateTime
+    +FacilityId: int
+    +BidId: int
+    +SellerId: int
+    +LotId: int
+}
+
+class Address {
+    +Id: Guid
+}
+
+class Facility {
+    +Id: int
+    +Name: string
+    +AddressId: int
+}
+
+class Bid {
+    +Id: Guid
+    +Name: string
+    +currentPrice: money
+}
+
+class Seller { 
+    +Id: int
+    +Name: string
+}
+
+class Vehicle {
+    +Id: Guid
+    +Vin: string
+    +Odometer: int
+    +ImageUrl: string
+    +LotId: int
+    +TransmissionId: int
+    +ColorId: int
+    +VehicleMakeId: int
+    +VehicleModelId: int
+    +DriveTrainId: int
+    +BodyStyleId: int
+    +EngineId: int
+}
+
+class Condition { 
+    +Id: Guid
+    +PrimaryDamage: enum
+    +Keys: boolean
+    +SecondaryDamage: enum
+    +Highlights: 'run and drive'
+    +VehicleId: int
+}
+
+class Transmission { 
+    +Id: int
+    +Type: enum
+}
+
+class Color { 
+    +Id: int
+    +Name: enum
+}
+
+class Odometer { 
+    +Id: Guid
+    +Value: enum
+}
+
+class VehicleMake { 
+    +Id: Guid
+    +Name: string
+}
+
+class VehicleModel { 
+    +Id: Guid
+    +Name: string
+}
+
+class DriveTrain { 
+    +Id: int
+    +Type: enum
+}
+
+class BodyStyle { 
+    +Id: int
+    +Type: enum
+}
+
+class Engine { 
+    +Id: Guid
+    +CylinderNumber: smallInt
+    +Volume: smallInt 
+}
+
+class Fuel { 
+    +Id: int
+    +EngineId: int
+    +Type: enum
+}
+
+Auction "1" --> "*" Lot : Lots
+Lot "1" --> "1" SaleInfo : SaleInfo
+Facility "1" --> "*" SaleInfo : Facility
+Address "1" --> "*" Facility : Address
+Bid "1" --> "*" SaleInfo : Bid
+Seller "1" --> "*" SaleInfo : Seller
+Vehicle "1" --> "1" Lot : Vehicle
+Engine "1" --> "n" Vehicle : Engine
+Fuel "1" --> "n" Engine : Fuel
+Color "1" --> "n" Vehicle : Engine
+Odometer "1" --> "1" Vehicle : Odometer
+Transmission "1" --> "n" Vehicle : Transmission
+BodyStyle "1" --> "n" Vehicle : BodyStyle
+VehicleMake "1" --> "n" Vehicle : VehicleMake
+VehicleModel "1" --> "n" Vehicle : VehicleModel
+DriveTrain "1" --> "n" Vehicle : DriveTrain
+Condition "1" --> "1" Vehicle : Condition
+
+
+@enduml
