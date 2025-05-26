@@ -9,7 +9,7 @@ public class Lot: Entity<EntityGuId>
     public int LotNumber { get; private set; }
     public DateTime DatePlaced { get; private set; }
     public DateTime EndDate { get; private set; }
-    public Vehicle.Vehicle Vehicle { get; private set; }
+    public Vehicle.Vehicle? Vehicle { get; private set; }
     public Auction Auction { get; private set; }
 
     
@@ -18,8 +18,7 @@ public class Lot: Entity<EntityGuId>
     public Lot(
         EntityGuId auctionId,
         int lotNumber,
-        DateTime endDate,
-        Vehicle.Vehicle vehicle)
+        DateTime endDate)
     {
         AuctionId = auctionId;
         LotNumber = lotNumber;

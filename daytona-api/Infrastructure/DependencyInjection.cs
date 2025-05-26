@@ -1,4 +1,5 @@
-﻿using Infrastructure.Persistence;
+﻿using System.Text.Json.Serialization;
+using Infrastructure.Persistence;
 using Infrastructure.Persistence.Converters;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
@@ -30,7 +31,8 @@ public static class DependencyInjection
             options.ReplaceService<IValueConverterSelector, StronglyTypedIdValueConverterSelector>();
 
         });
-
+        builder.Services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
+       
         // Регистрация репозиториев
         // services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
         // services.AddScoped(typeof(IReadRepository<>), typeof(Repository<>));

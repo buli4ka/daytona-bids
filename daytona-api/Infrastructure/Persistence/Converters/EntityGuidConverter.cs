@@ -13,6 +13,16 @@ public class EntityGuIdConverter : ValueConverter<EntityGuId, Guid>
     }
 }
 
+// public class EntityIntIdConverter : ValueConverter<EntityIntId, Guid>
+// {
+//     public EntityIntIdConverter() 
+//         : base(
+//             id => id.Value,
+//             value => EntityIntId.FromGuid(value))
+//     {
+//     }
+// }
+
 public class EntityIntIdConverter : ValueConverter<EntityIntId, int>
 {
     public EntityIntIdConverter() 

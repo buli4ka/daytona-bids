@@ -10,6 +10,8 @@ public class AuctionConfiguration: IEntityTypeConfiguration<Auction>
     {
         builder.HasKey(e => e.Id);
 
+        // builder.Property(a => a.Id).ValueGeneratedOnAdd();
+
         builder.Property(e => e.Name).IsRequired().HasMaxLength(20);
 
         builder

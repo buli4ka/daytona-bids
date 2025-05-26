@@ -1,8 +1,10 @@
-﻿namespace Core.Entities.Common;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Core.Entities.Common;
 
 public abstract class Entity<TEntityId>
 {
-    
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public TEntityId Id { get; init; }
     
     protected Entity() {}
