@@ -1,0 +1,38 @@
+{
+    "auctionName": "copart",
+    "auctionLocation": {
+        "street": "some street"
+    },
+    "lots": [
+        {
+            "lotNumber": 12345678,
+            "datePlaced": "some date",
+            "vehicle": {
+                "vin": "WAUAFAFL5EA******",
+                "odometer": 32123,
+                "imageUrl": "https://some-imahe.jpg",
+                "transnission": "automatic",
+                "color": "Charcoal",
+                "vehicleMake": "Dodge",
+                "vehicleModel": "Challenger",
+                "driveTrain": "Rear Wheel Drive",
+                "BodyStyle": "Coupe", 
+                "engine": {
+                    "cylinderNumber": 8,
+                    "volume": 6400,
+                    "fuel": "gas"
+                },
+                "condition": {
+                    "keys": true,
+                    "primaryDamage": "Front",
+                    "secondaryDamage": null,
+                    "highlights": "Run and drive"
+                } 
+
+            },
+            "saleInfo": {
+
+            }
+        }
+    ]
+}
