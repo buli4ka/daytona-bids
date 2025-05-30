@@ -4,7 +4,7 @@ using Core.Entities.Models.Vehicle;
 using Infrastructure.Persistence;
 using MediatR;
 
-namespace Application.Cars.Queries;
+namespace Application.Vehicles.Queries;
 
 public record GetVehiclesQuery(int PageNumber, int PageSize) : IRequest<List<Vehicle>>;
 

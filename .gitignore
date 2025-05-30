@@ -46,6 +46,7 @@ Save
 # temp directory
 .temp
 .tmp
+.$*
 
 # Runtime data
 pids

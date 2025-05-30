@@ -7,12 +7,14 @@ namespace Core.Entities.Models.Vehicle;
 public class Condition: Entity<EntityGuId>
 {
     public bool Keys { get; private set; }
+    public string? Title { get; private set; }
+
     public EntityIntId? PrimaryDamageId { get; private set; }
     public EntityIntId? HighlightsId { get; private set; }
     public EntityGuId VehicleId { get; private set; }
 
     
-    public Models.Vehicle.Vehicle Vehicle { get; private set; }
+    public Vehicle Vehicle { get; private set; }
     public Damage? PrimaryDamage { get; private set; }
     public Highlights Highlights { get; private set; }
     

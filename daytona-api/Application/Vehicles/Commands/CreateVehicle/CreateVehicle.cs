@@ -4,7 +4,7 @@ using Core.Entities.Models.Vehicle;
 using Infrastructure.Persistence;
 using MediatR;
 
-namespace Application.Cars.Commands.CreateVehicle;
+namespace Application.Vehicles.Commands.CreateVehicle;
 
 
 public record CreateVehicleCommand : IRequest<Vehicle>

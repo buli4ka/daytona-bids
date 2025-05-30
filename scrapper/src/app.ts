@@ -13,6 +13,10 @@ server.post('/generate', async (request, reply) => {
     return await launchParser();
 })
 
+server.get('/test', async (request, reply) => {
+    
+})
+
 server.listen({ port: PORT }, (err, address) => {
     if (err) {
         console.error(err)
