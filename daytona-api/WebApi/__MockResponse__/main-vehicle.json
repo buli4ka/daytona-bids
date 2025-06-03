@@ -6,17 +6,19 @@
     "lots": [
         {
             "lotNumber": 12345678,
+            "lotUrl": "https://www.copart.com/lot/64958464/2020-dodge-challenger-rt-scat-pack-nj-glassboro-east",
             "datePlaced": "some date",
             "vehicle": {
                 "vin": "WAUAFAFL5EA******",
                 "odometer": 32123,
-                "imageUrl": "https://some-imahe.jpg",
-                "transnission": "automatic",
+                "imageUrl": "https://www.americanauthority.com/cdn/shop/files/2010-23-challenger-widebody-sh-red-side-front.jpg?v=1688688082",
+                "transmission": "automatic",
                 "color": "Charcoal",
-                "vehicleMake": "Dodge",
-                "vehicleModel": "Challenger",
+                "make": "Dodge",
+                "year": 2019,
+                "model": "Challenger",
                 "driveTrain": "Rear Wheel Drive",
-                "BodyStyle": "Coupe", 
+                "bodyStyle": "Coupe", 
                 "engine": {
                     "cylinderNumber": 8,
                     "volume": 6400,
@@ -31,8 +33,459 @@
 
             },
             "saleInfo": {
+                "saleStatus": "Ongoing",
+                "retailPrice": 34000,
+                "saleDate": "2025-06-15",
+                "facility": {
+                    "name": "Main Facility",
+                    "address": {
+                        "street": "street",
+                        "city": "city",
+                        "state": "state",
+                        "zip": 12345
+                    }
+                },
+                "bid": {
+                    "currentPrice": 15330
+                },
+                "seller": {
+                    "name": "American insurance"
+                }
+            }
+        },
+        {
+            "lotNumber": 34567890,
+            "lotUrl": "https://www.copart.com/lot/64958464/2020-dodge-challenger-rt-scat-pack-nj-glassboro-east",
+            "datePlaced": "some date",
+            "vehicle": {
+                "vin": "WAUAFAFL5EA******",
+                "odometer": 32123,
+                "imageUrl": "https://nextcar.ua/images/detailed/464/8c3cd2527316483eb78a274c5a84486f.jpg",
+                "transmission": "automatic",
+                "color": "Charcoal",
+                "make": "Dodge",
+                "year": 2019,
+                "model": "Charger",
+                "driveTrain": "Rear Wheel Drive",
+                "bodyStyle": "Coupe",
+                "engine": {
+                    "cylinderNumber": 8,
+                    "volume": 6400,
+                    "fuel": "gas"
+                },
+                "condition": {
+                    "keys": true,
+                    "primaryDamage": "Front",
+                    "secondaryDamage": null,
+                    "highlights": "Run and drive"
+                }
 
+            },
+            "saleInfo": {
+                "saleStatus": "Ongoing",
+                "retailPrice": 34000,
+                "saleDate": "2025-06-15",
+                "facility": {
+                    "name": "Main Facility",
+                    "address": {
+                        "street": "street",
+                        "city": "city",
+                        "state": "state",
+                        "zip": 12345
+                    }
+                },
+                "bid": {
+                    "currentPrice": 15330
+                },
+                "seller": {
+                    "name": "American insurance"
+                }
+            }
+        },{
+            "lotNumber": 23456789,
+            "lotUrl": "https://www.copart.com/lot/64958464/2020-dodge-challenger-rt-scat-pack-nj-glassboro-east",
+            "datePlaced": "some date",
+            "vehicle": {
+                "vin": "WAHJSIAFL5EA******",
+                "odometer": 45123,
+                "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZbaq2OUyNU4Y2IaHs5TU4dsdjLzs9XKniNw&s",
+                "transmission": "automatic",
+                "color": "Charcoal",
+                "make": "Dodge",
+                "year": 2019,
+                "model": "Dart",
+                "driveTrain": "Rear Wheel Drive",
+                "bodyStyle": "Coupe",
+                "engine": {
+                    "cylinderNumber": 4,
+                    "volume": 2400,
+                    "fuel": "gas"
+                },
+                "condition": {
+                    "keys": true,
+                    "primaryDamage": "Front",
+                    "secondaryDamage": null,
+                    "highlights": "Run and drive"
+                }
+
+            },
+            "saleInfo": {
+                "saleStatus": "Ongoing",
+                "retailPrice": 34000,
+                "saleDate": "2025-06-15",
+                "facility": {
+                    "name": "Main Facility",
+                    "address": {
+                        "street": "street",
+                        "city": "city",
+                        "state": "state",
+                        "zip": 12345
+                    }
+                },
+                "bid": {
+                    "currentPrice": 15330
+                },
+                "seller": {
+                    "name": "American insurance"
+                }
+            }
+        },
+        {
+            "lotNumber": 45678901,
+            "lotUrl": "https://www.copart.com/lot/64958464/2020-dodge-challenger-rt-scat-pack-nj-glassboro-east",
+            "datePlaced": "some date",
+            "vehicle": {
+                "vin": "WBAJK5C52GG******",
+                "odometer": 28750,
+                "imageUrl": "https://bmw.dp.ua/storage/units/big/oblp90403620highresbmw-m4-competition-xcr.jpg",
+                "transmission": "manual",
+                "color": "Alpine White",
+                "make": "BMW",
+                "year": 2023,
+                "model": "M4",
+                "driveTrain": "Rear Wheel Drive",
+                "bodyStyle": "Coupe",
+                "engine": {
+                    "cylinderNumber": 6,
+                    "volume": 3000,
+                    "fuel": "gas"
+                },
+                "condition": {
+                    "keys": true,
+                    "primaryDamage": "Rear",
+                    "secondaryDamage": null,
+                    "highlights": "Run and drive"
+                }
+            },
+            "saleInfo": {
+                "saleStatus": "Ongoing",
+                "retailPrice": 72000,
+                "saleDate": "2025-06-20",
+                "facility": {
+                    "name": "Main Facility",
+                    "address": {
+                        "street": "street",
+                        "city": "city",
+                        "state": "state",
+                        "zip": 12345
+                    }
+                },
+                "bid": {
+                    "currentPrice": 45000
+                },
+                "seller": {
+                    "name": "European Motors"
+                }
+            }
+        },
+        {
+            "lotNumber": 56789012,
+            "lotUrl": "https://www.copart.com/lot/64958464/2020-dodge-challenger-rt-scat-pack-nj-glassboro-east",
+            "datePlaced": "some date",
+            "vehicle": {
+                "vin": "JN1BV7AR4EM******",
+                "odometer": 15620,
+                "imageUrl": "https://avatars.mds.yandex.net/get-vertis-journal/3934100/2021-03-03-3d40e6f448324768ab0d0340c6b432d8.jpg_1622737200313/orig",
+                "transmission": "automatic",
+                "color": "Slate Gray",
+                "make": "Infiniti",
+                "year": 2022,
+                "model": "Q60",
+                "driveTrain": "All Wheel Drive",
+                "bodyStyle": "Coupe",
+                "engine": {
+                    "cylinderNumber": 6,
+                    "volume": 3000,
+                    "fuel": "gas"
+                },
+                "condition": {
+                    "keys": true,
+                    "primaryDamage": "Side",
+                    "secondaryDamage": null,
+                    "highlights": "Enhanced by Sport Package"
+                }
+            },
+            "saleInfo": {
+                "saleStatus": "Ongoing",
+                "retailPrice": 45000,
+                "saleDate": "2025-06-18",
+                "facility": {
+                    "name": "Main Facility",
+                    "address": {
+                        "street": "street",
+                        "city": "city",
+                        "state": "state",
+                        "zip": 12345
+                    }
+                },
+                "bid": {
+                    "currentPrice": 28500
+                },
+                "seller": {
+                    "name": "Premium Auto"
+                }
+            }
+        },
+        {
+            "lotNumber": 67890123,
+            "lotUrl": "https://www.copart.com/lot/64958464/2020-dodge-challenger-rt-scat-pack-nj-glassboro-east",
+            "datePlaced": "some date",
+            "vehicle": {
+                "vin": "WDDWK8DB1KF******",
+                "odometer": 12400,
+                "imageUrl": "https://bin.ua/uploads/posts/2022-09/1664266984_1.jpg",
+                "transmission": "automatic",
+                "color": "Obsidian Black",
+                "make": "Mercedes-Benz",
+                "year": 2024,
+                "model": "C63 AMG",
+                "driveTrain": "All Wheel Drive",
+                "bodyStyle": "Sedan",
+                "engine": {
+                    "cylinderNumber": 8,
+                    "volume": 4000,
+                    "fuel": "gas"
+                },
+                "condition": {
+                    "keys": true,
+                    "primaryDamage": "Front",
+                    "secondaryDamage": null,
+                    "highlights": "Premium Plus Package"
+                }
+            },
+            "saleInfo": {
+                "saleStatus": "Ongoing",
+                "retailPrice": 85000,
+                "saleDate": "2025-06-25",
+                "facility": {
+                    "name": "Main Facility",
+                    "address": {
+                        "street": "street",
+                        "city": "city",
+                        "state": "state",
+                        "zip": 12345
+                    }
+                },
+                "bid": {
+                    "currentPrice": 52000
+                },
+                "seller": {
+                    "name": "Luxury Motors"
+                }
+            }
+        },
+        {
+            "lotNumber": 78901234,
+            "lotUrl": "https://www.copart.com/lot/64958464/2020-dodge-challenger-rt-scat-pack-nj-glassboro-east",
+            "datePlaced": "some date",
+            "vehicle": {
+                "vin": "WP0AB2A92LS******",
+                "odometer": 8900,
+                "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrxrCT-y3PsaXrZbmL-8HIVIDRwrELBU3ohA&s",
+                "transmission": "automatic",
+                "color": "Guards Red",
+                "make": "Porsche",
+                "year": 2024,
+                "model": "911",
+                "driveTrain": "All Wheel Drive",
+                "bodyStyle": "Coupe",
+                "engine": {
+                    "cylinderNumber": 6,
+                    "volume": 3000,
+                    "fuel": "gas"
+                },
+                "condition": {
+                    "keys": true,
+                    "primaryDamage": "Rear",
+                    "secondaryDamage": null,
+                    "highlights": "Sport Chrono Package"
+                }
+            },
+            "saleInfo": {
+                "saleStatus": "Ongoing",
+                "retailPrice": 125000,
+                "saleDate": "2025-07-01",
+                "facility": {
+                    "name": "Main Facility",
+                    "address": {
+                        "street": "street",
+                        "city": "city",
+                        "state": "state",
+                        "zip": 12345
+                    }
+                },
+                "bid": {
+                    "currentPrice": 78000
+                },
+                "seller": {
+                    "name": "Sports Car Specialists"
+                }
+            }
+        },
+        {
+            "lotNumber": 89012345,
+            "lotUrl": "https://www.copart.com/lot/64958464/2020-dodge-challenger-rt-scat-pack-nj-glassboro-east",
+            "datePlaced": "some date",
+            "vehicle": {
+                "vin": "ZHWUR4ZF8LLA******",
+                "odometer": 3200,
+                "imageUrl": "https://media.autoexpress.co.uk/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1667815729/evo/2022/11/Huracan%20replacement%20lead.jpg",
+                "transmission": "automatic",
+                "color": "Verde Mantis",
+                "make": "Lamborghini",
+                "year": 2024,
+                "model": "Huracan",
+                "driveTrain": "All Wheel Drive",
+                "bodyStyle": "Coupe",
+                "engine": {
+                    "cylinderNumber": 10,
+                    "volume": 5200,
+                    "fuel": "gas"
+                },
+                "condition": {
+                    "keys": true,
+                    "primaryDamage": "Side",
+                    "secondaryDamage": null,
+                    "highlights": "Lifting System"
+                }
+            },
+            "saleInfo": {
+                "saleStatus": "Ongoing",
+                "retailPrice": 280000,
+                "saleDate": "2025-07-05",
+                "facility": {
+                    "name": "Main Facility",
+                    "address": {
+                        "street": "street",
+                        "city": "city",
+                        "state": "state",
+                        "zip": 12345
+                    }
+                },
+                "bid": {
+                    "currentPrice": 165000
+                },
+                "seller": {
+                    "name": "Exotic Auto Gallery"
+                }
+            }
+        },
+        {
+            "lotNumber": 90123456,
+            "lotUrl": "https://www.copart.com/lot/64958464/2020-dodge-challenger-rt-scat-pack-nj-glassboro-east",
+            "datePlaced": "some date",
+            "vehicle": {
+                "vin": "YV1LFA0ACJ4******",
+                "odometer": 22100,
+                "imageUrl": "https://claveyscorner.com/wp-content/uploads/2023/01/2023-Volvo-S60-Front-Three-Quarter-Shot.jpg",
+                "transmission": "automatic",
+                "color": "Crystal White",
+                "make": "Volvo",
+                "year": 2023,
+                "model": "S60",
+                "driveTrain": "All Wheel Drive",
+                "bodyStyle": "Sedan",
+                "engine": {
+                    "cylinderNumber": 4,
+                    "volume": 2000,
+                    "fuel": "hybrid"
+                },
+                "condition": {
+                    "keys": true,
+                    "primaryDamage": "Front",
+                    "secondaryDamage": null,
+                    "highlights": "Inscription Package"
+                }
+            },
+            "saleInfo": {
+                "saleStatus": "Ongoing",
+                "retailPrice": 48000,
+                "saleDate": "2025-06-28",
+                "facility": {
+                    "name": "Main Facility",
+                    "address": {
+                        "street": "street",
+                        "city": "city",
+                        "state": "state",
+                        "zip": 12345
+                    }
+                },
+                "bid": {
+                    "currentPrice": 32000
+                },
+                "seller": {
+                    "name": "Scandinavian Auto"
+                }
+            }
+        },
+        {
+            "lotNumber": 62354623,
+            "lotUrl": "https://www.copart.com/lot/64958464/2020-dodge-challenger-rt-scat-pack-nj-glassboro-east",
+            "datePlaced": "some date",
+            "vehicle": {
+                "vin": "WAUB4AF47JN******",
+                "odometer": 18500,
+                "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK9brhUqGIBXwvfT5vJtzcpWflpx18zyLpjA&s",
+                "transmission": "automatic",
+                "color": "Nardo Gray",
+                "make": "Audi",
+                "year": 2023,
+                "model": "RS5",
+                "driveTrain": "All Wheel Drive",
+                "bodyStyle": "Sportback",
+                "engine": {
+                    "cylinderNumber": 6,
+                    "volume": 2900,
+                    "fuel": "gas"
+                },
+                "condition": {
+                    "keys": true,
+                    "primaryDamage": "Rear",
+                    "secondaryDamage": null,
+                    "highlights": "Dynamic Package"
+                }
+            },
+            "saleInfo": {
+                "saleStatus": "Ongoing",
+                "retailPrice": 78000,
+                "saleDate": "2025-06-30",
+                "facility": {
+                    "name": "Main Facility",
+                    "address": {
+                        "street": "street",
+                        "city": "city",
+                        "state": "state",
+                        "zip": 12345
+                    }
+                },
+                "bid": {
+                    "currentPrice": 48000
+                },
+                "seller": {
+                    "name": "German Auto Specialists"
+                }
             }
         }
     ]
+
 }

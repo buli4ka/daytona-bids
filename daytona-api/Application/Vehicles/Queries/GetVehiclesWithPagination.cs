@@ -32,6 +32,7 @@ public class GetVehiclesWithPagination: IRequestHandler<GetVehiclesQuery, List<V
         
         var vehicle = new Vehicle(
             "123412121212121212",
+            2019,
             "image",
             lot.Id,
             vehTransmission.Id,

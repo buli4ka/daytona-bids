@@ -9,6 +9,7 @@ public class Vehicle: Entity<EntityGuId>
 {
     public string Vin { get; private set; }
     public string ImageUrl { get; private set; }
+    public short Year { get; private set; }
     public EntityGuId LotId { get; private set; }
 
     public EntityIntId TransmissionId { get; private set; }
@@ -39,6 +40,7 @@ public class Vehicle: Entity<EntityGuId>
     
     public Vehicle(
         string vin,
+        short year,
         string imageUrl,
         EntityGuId lotId,
         EntityIntId transmissionId,
@@ -60,6 +62,7 @@ public class Vehicle: Entity<EntityGuId>
         Vin = vin;
         ImageUrl = imageUrl;
         LotId = lotId;
+        Year = year;
         TransmissionId = transmissionId;
         ColorId = colorId;
         VehicleMakeId = vehicleMakeId;

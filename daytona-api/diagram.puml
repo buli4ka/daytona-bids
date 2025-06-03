@@ -49,6 +49,7 @@ class Vehicle {
     +Id: Guid
     +Vin: string
     +Odometer: int
+    +Year: Date
     +ImageUrl: string
     +LotId: int
     +TransmissionId: int

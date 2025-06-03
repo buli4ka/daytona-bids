@@ -73,6 +73,7 @@ public class CreateVehicleCommandHandler: IRequestHandler<CreateVehicleCommand, 
         //
         var vehicle = await _context.Vehicles.AddAsync( new Vehicle(
             "11111111111111111",
+            2019,
             "image",
             lot.Entity.Id,
             vehTransmission.Entity.Id,

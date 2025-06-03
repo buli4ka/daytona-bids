@@ -1,0 +1,64 @@
+{
+    "auctionName": "copart",
+    "auctionLocation": {
+        "street": "some street"
+    },
+    "lot": {
+        "lotNumber": 12345678,
+        "lotUrl": "https://www.copart.com/lot/64958464/2020-dodge-challenger-rt-scat-pack-nj-glassboro-east",
+        "datePlaced": "some date",
+        "vehicle": {
+            "vin": "WAUAFAFL5EA******",
+            "odometer": 32123,
+            "imageUrl": "https://cs.copart.com/v1/AUTH_svc.pdoc00001/ids-c-prod-lpp/0824/1f8dbfda179241a983b15ec37178858c_hrs.jpg",
+            "imageUrls": [
+                "https://cs.copart.com/v1/AUTH_svc.pdoc00001/ids-c-prod-lpp/0824/1f8dbfda179241a983b15ec37178858c_hrs.jpg",
+                "https://cs.copart.com/v1/AUTH_svc.pdoc00001/ids-c-prod-lpp/0824/955fc778692b4cfc84c64524c6090110_hrs.jpg",
+                "https://cs.copart.com/v1/AUTH_svc.pdoc00001/ids-c-prod-lpp/0824/b13df99374f94072846aa965b098d1e6_hrs.jpg",
+                "https://cs.copart.com/v1/AUTH_svc.pdoc00001/ids-c-prod-lpp/0824/c3e2f94c4686494fb373a607a3e06bca_hrs.jpg",
+                "https://cs.copart.com/v1/AUTH_svc.pdoc00001/ids-c-prod-lpp/0824/480dfd3f58af42d2881bd8be5d53d253_hrs.jpg",
+                "https://cs.copart.com/v1/AUTH_svc.pdoc00001/ids-c-prod-lpp/0824/d3e1af65aa2a49f88ebc742165c8cd2a_hrs.jpg",
+                "https://cs.copart.com/v1/AUTH_svc.pdoc00001/ids-c-prod-lpp/1024/3eab3dac5c82489c8e0d07c9f97b2224_hrs.jpg",
+                "https://cs.copart.com/v1/AUTH_svc.pdoc00001/ids-c-prod-lpp/0824/40b87604c8554d3badb825e1cbac01df_hrs.jpg"
+            ],
+            "transmission": "automatic",
+            "color": "Charcoal",
+            "make": "Dodge",
+            "year": 2019,
+            "model": "Challenger",
+            "driveTrain": "Rear Wheel Drive",
+            "bodyStyle": "Coupe",
+            "engine": {
+                "cylinderNumber": 8,
+                "volume": 6400,
+                "fuel": "gas"
+            },
+            "condition": {
+                "keys": true,
+                "primaryDamage": "Front",
+                "secondaryDamage": null,
+                "highlights": "Run and drive"
+            }
+        },
+        "saleInfo": {
+            "saleStatus": "Ongoing",
+            "retailPrice": 34000,
+            "saleDate": "2025-06-15",
+            "facility": {
+                "name": "Main Facility",
+                "address": {
+                    "street": "street",
+                    "city": "city",
+                    "state": "state",
+                    "zip": 12345
+                }
+            },
+            "bid": {
+                "currentPrice": 15330
+            },
+            "seller": {
+                "name": "American insurance"
+            }
+        }
+    }
+}
