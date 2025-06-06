@@ -61,13 +61,19 @@ class Vehicle {
     +EngineId: int
 }
 
+class ImageUrls { 
+    +Id: int
+    +VehicleId: Guid
+    +url: string
+}
+
 class Condition { 
     +Id: Guid
     +PrimaryDamage: enum
     +Keys: boolean
     +SecondaryDamage: enum
     +Highlights: 'run and drive'
-    +VehicleId: int
+    +VehicleId: Guid
 }
 
 class Transmission { 
@@ -124,6 +130,7 @@ Address "1" --> "*" Facility : Address
 Bid "1" --> "*" SaleInfo : Bid
 Seller "1" --> "*" SaleInfo : Seller
 Vehicle "1" --> "1" Lot : Vehicle
+Vehicle "1" --> "*" ImageUrls : ImageUrls
 Engine "1" --> "n" Vehicle : Engine
 Fuel "1" --> "n" Engine : Fuel
 Color "1" --> "n" Vehicle : Engine

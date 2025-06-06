@@ -39,3 +39,8 @@ response
 
 find totalElements to calculate search results
 
+look for - [
+https://www.copart.com/public/data/lotdetails/solr/77218384 - get by lot
+
+    
+]

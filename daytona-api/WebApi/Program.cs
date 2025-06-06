@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 using Application;
+using Core;
 using Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.AddCore();
 builder.AddInfrastructure();
 builder.AddApplication();
 

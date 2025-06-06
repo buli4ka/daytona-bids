@@ -1,10 +1,23 @@
 ﻿import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Box, CardContent, CardMedia, Divider, Stack, Typography } from '@mui/material';
+import {
+  Box,
+  CardContent,
+  CardMedia,
+  Divider,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Stack,
+  Typography,
+} from '@mui/material';
 import Card from '@mui/material/Card';
 import { LotType } from '@/types/dtos/lot';
-
+import NumbersSharpIcon from '@mui/icons-material/NumbersSharp';
+import CodeOutlinedIcon from '@mui/icons-material/CodeOutlined';
+import BuildOutlinedIcon from '@mui/icons-material/BuildOutlined';
 type Props = { lotDetails: LotType };
 const LotDetailsCard = ({ lotDetails: lot }: Props) => {
   return (
@@ -53,11 +66,11 @@ const LotDetailsCard = ({ lotDetails: lot }: Props) => {
     //     </CardContent>
     //   </Box>
     // </Card>
-    <Card className='h-[450px] '>
+    <Card className='min-h-[350px] '>
       <CardContent>
         <Stack direction={{ xs: 'column', md: 'row' }} spacing={2}>
           <Box maxWidth={{ md: '400px' }} className='w-full h-full'>
-            <Link href='/vahicle/[lotNumber]' as={`/lot/${lot.lotNumber}`}>
+            <Link href='/lot/[lotNumber]' as={`/lot/${lot.lotNumber}`}>
               <Image
                 src={lot.vehicle.imageUrl}
                 alt={lot.vehicle.vin}
@@ -74,11 +87,41 @@ const LotDetailsCard = ({ lotDetails: lot }: Props) => {
               component='div'
             >{`${lot.vehicle.make} ${lot.vehicle.model} ${lot.vehicle.year}`}</Typography>
             <Divider orientation='horizontal' flexItem />
-            <Box className=''>
-              <Typography>{lot.vehicle.vin}</Typography>
-              <Typography>{lot.vehicle.odometer}</Typography>
-              <Typography>{lot.vehicle.condition.highlights}</Typography>
-            </Box>
+            <Stack direction={{ lg: 'row' }} spacing={2}>
+              <Box flex={2}>
+                <List>
+                  <ListItem className='flex gap-2' divider>
+                    <Typography variant='subtitle1' className='flex items-center gap-1'>
+                      <NumbersSharpIcon />
+                      Lot Number:
+                    </Typography>
+                    <Typography variant='subtitle2'>{lot.lotNumber}</Typography>
+                  </ListItem>
+                  <ListItem className='flex gap-2' divider>
+                    <Typography variant='subtitle1' className='flex items-center gap-1'>
+                      <CodeOutlinedIcon />
+                      Vin Code:
+                    </Typography>
+                    <Typography variant='subtitle2'>{lot.vehicle.vin}</Typography>
+                  </ListItem>
+                  <ListItem className='flex gap-2' divider>
+                    <Typography variant='subtitle1' className='flex items-center gap-1'>
+                      <BuildOutlinedIcon />
+                      Condition:
+                    </Typography>
+                    <Typography variant='subtitle2'>{lot.vehicle.condition.highlights}</Typography>
+                  </ListItem>
+                  <ListItem className='flex gap-2' divider>
+                    <Typography variant='subtitle1' className='flex items-center gap-1'>
+                      <Image src='/icons/speedometer.svg' alt='speedometer-icon' width={24} height={24} />
+                      Odometer:
+                    </Typography>
+                    <Typography variant='subtitle2'>{lot.vehicle.odometer}</Typography>
+                  </ListItem>
+                </List>
+              </Box>
+              <Box flex={1}>a</Box>
+            </Stack>
           </Box>
         </Stack>
         <Box className=''>Hello</Box>

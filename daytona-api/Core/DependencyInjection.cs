@@ -1,6 +1,13 @@
-﻿namespace Core;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
-public class DependencyInjection
+namespace Core;
+
+public static class DependencyInjection
 {
+    public static void AddCore(this IHostApplicationBuilder builder)
+    {
+
+    }
 
 }

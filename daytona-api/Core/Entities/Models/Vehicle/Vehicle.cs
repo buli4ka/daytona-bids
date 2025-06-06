@@ -33,7 +33,7 @@ public class Vehicle: Entity<EntityGuId>
     public Engine Engine { get; private set; }
     public Odometer? Odometer { get; private set; }
     public Condition? Condition { get; private set; }
-
+    public IEnumerable<ImageUrl>? ImageUrls { get; private set; } = new List<ImageUrl>();
 
 
     private Vehicle() {}

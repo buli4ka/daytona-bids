@@ -5,6 +5,8 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import LayoutContainer from '@/components/main-layout/main-layout';
 import AppHeader from '@/components/app-header/app-header';
 import { Container } from '@mui/material';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from '@/configuration/mui-theme';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -30,8 +32,10 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-          <AppHeader />
-          <Container maxWidth='xl'>{children}</Container>
+          <ThemeProvider theme={theme}>
+            <AppHeader />
+            <Container maxWidth='xl'>{children}</Container>
+          </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
