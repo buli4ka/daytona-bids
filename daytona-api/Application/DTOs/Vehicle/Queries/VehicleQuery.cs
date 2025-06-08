@@ -2,20 +2,17 @@
 
 namespace Application.DTOs.Vehicle.Queries;
 
-public class VehicleQuery
-{
-    public string vin { get; set; }
-    public string imageUrl { get; set; }
-    public short year { get; set; }
-    public string transmission { get; set; }
-    public string vehicleMake { get; set; }
-    public string vehicleModel { get; set; }
-    public string driveTrain { get; set; }
-    public string bodyStyle { get; set; }
-    public List<string> imageUrls  { get; set; }
-    
-    public EngineQuery engine { get; set; }
-    public OdometerQuery odometer { get; set; }
-    public ConditionQuery condition { get; set; }
-
-}
+public sealed record VehicleQuery(
+    string vin,
+    short year,
+    string transmission,
+    string vehicleMake,
+    string vehicleModel,
+    string driveTrain,
+    string bodyStyle,
+    string color,
+    List<string>? imageUrls,
+    EngineQuery engine,
+    OdometerQuery? odometer,
+    ConditionQuery condition
+);

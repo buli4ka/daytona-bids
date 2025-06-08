@@ -9,6 +9,6 @@ public class VehicleModel: BaseValueEntity<EntityGuId, string>
     public VehicleModel(string value):base(value)
     {
     }
-    public ICollection<Models.Vehicle.Vehicle> Vehicles { get; private set; } = new List<Models.Vehicle.Vehicle>();
+    public ICollection<Models.Vehicle.Vehicle> Vehicles { get; set; } = new List<Models.Vehicle.Vehicle>();
 
 }

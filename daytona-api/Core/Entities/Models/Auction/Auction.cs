@@ -5,7 +5,7 @@ namespace Core.Entities.Models.Auction;
 
 public class Auction: Entity<EntityGuId>
 {
-    public string Name { get; private set; }
+    public string Name { get; set; }
     
     public Auction(string name)
     {
@@ -14,6 +14,6 @@ public class Auction: Entity<EntityGuId>
     
     private Auction() {}
     
-    public ICollection<Lot> Lots { get; private set; } = new List<Lot>();
+    public ICollection<Lot> Lots { get; set; } = new List<Lot>();
     
 }

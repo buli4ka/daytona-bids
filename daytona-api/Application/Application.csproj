@@ -17,8 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\Lot\Auction\Commands\" />
     <Folder Include="DTOs\Lot\Commands\" />
+    <Folder Include="Queries\Auction\" />
   </ItemGroup>
 
 </Project>

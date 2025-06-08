@@ -7,33 +7,33 @@ namespace Core.Entities.Models.Vehicle;
 
 public class Vehicle: Entity<EntityGuId>
 {
-    public string Vin { get; private set; }
-    public string ImageUrl { get; private set; }
-    public short Year { get; private set; }
-    public EntityGuId LotId { get; private set; }
+    public string Vin { get; set; }
+    public string ImageUrl { get; set; }
+    public short Year { get; set; }
+    public EntityGuId LotId { get; set; }
 
-    public EntityIntId TransmissionId { get; private set; }
-    public EntityIntId ColorId { get; private set; }
-    public EntityGuId VehicleMakeId { get; private set; }
-    public EntityGuId VehicleModelId { get; private set; }
-    public EntityIntId DriveTrainId { get; private set; }
-    public EntityIntId BodyStyleId { get; private set; }
-    public EntityGuId EngineId { get; private set; }
+    public EntityIntId TransmissionId { get; set; }
+    public EntityIntId ColorId { get; set; }
+    public EntityGuId VehicleMakeId { get; set; }
+    public EntityGuId VehicleModelId { get; set; }
+    public EntityIntId DriveTrainId { get;  set; }
+    public EntityIntId BodyStyleId { get; set; }
+    public EntityGuId EngineId { get; set; }
     
     
     // Navigation Properties
     
-    public Color Color { get; private set; }
-    public Lot Lot { get; private set; }
-    public Transmission Transmission { get; private set; }
-    public VehicleMake VehicleMake { get; private set; }
-    public VehicleModel VehicleModel { get; private set; }
-    public DriveTrain DriveTrain { get; private set; }
-    public BodyStyle BodyStyle { get; private set; }
-    public Engine Engine { get; private set; }
-    public Odometer? Odometer { get; private set; }
-    public Condition? Condition { get; private set; }
-    public IEnumerable<ImageUrl>? ImageUrls { get; private set; } = new List<ImageUrl>();
+    public Color Color { get; set; }
+    public Lot Lot { get; set; }
+    public Transmission Transmission { get; set; }
+    public VehicleMake VehicleMake { get; set; }
+    public VehicleModel VehicleModel { get; set; }
+    public DriveTrain DriveTrain { get; set; }
+    public BodyStyle BodyStyle { get; set; }
+    public Engine Engine { get; set; }
+    public Odometer? Odometer { get; set; }
+    public Condition? Condition { get; set; }
+    public IEnumerable<ImageUrl>? ImageUrls { get; set; } = new List<ImageUrl>();
 
 
     private Vehicle() {}

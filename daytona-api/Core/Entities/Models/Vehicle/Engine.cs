@@ -15,11 +15,11 @@ public class Engine : Entity<EntityGuId>
         FuelId = fuelId;
     }
     
-    public byte CylinderNumber { get; private set; }
-    public short Volume { get; private set; }
-    public EntityIntId FuelId { get; private set; }
+    public byte CylinderNumber { get; set; }
+    public short Volume { get;  set; }
+    public EntityIntId FuelId { get; set; }
     
-    public Fuel Fuel { get; private set; }
-    public ICollection<Models.Vehicle.Vehicle> Vehicles { get; private set; } = new List<Models.Vehicle.Vehicle>();
+    public Fuel Fuel { get; set; }
+    public ICollection<Models.Vehicle.Vehicle> Vehicles { get; set; } = new List<Models.Vehicle.Vehicle>();
 
 }

@@ -6,17 +6,19 @@ namespace Core.Entities.Models.Vehicle;
 
 public class Condition: Entity<EntityGuId>
 {
-    public bool Keys { get; private set; }
-    public string? Title { get; private set; }
+    public bool Keys { get; set; }
+    public string? Title { get; set; }
 
-    public EntityIntId? PrimaryDamageId { get; private set; }
-    public EntityIntId? HighlightsId { get; private set; }
-    public EntityGuId VehicleId { get; private set; }
+    public EntityIntId? PrimaryDamageId { get; set; }
+    public EntityIntId? SecondaryDamageId { get; set; }
+    public EntityIntId? HighlightsId { get; set; }
+    public EntityGuId VehicleId { get; set; }
 
     
-    public Vehicle Vehicle { get; private set; }
-    public Damage? PrimaryDamage { get; private set; }
-    public Highlights Highlights { get; private set; }
+    public Vehicle Vehicle { get; set; }
+    public Damage? PrimaryDamage { get; set; }
+    public Damage? SecondaryDamage { get; set; }
+    public Highlights Highlights { get; set; }
     
     private Condition() {}
     

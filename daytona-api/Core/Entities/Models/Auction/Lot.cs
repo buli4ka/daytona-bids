@@ -5,12 +5,12 @@ namespace Core.Entities.Models.Auction;
 
 public class Lot: Entity<EntityGuId>
 {
-    public EntityGuId AuctionId { get; private set; }
-    public int LotNumber { get; private set; }
-    public DateTime DatePlaced { get; private set; }
-    public DateTime EndDate { get; private set; }
-    public Vehicle.Vehicle? Vehicle { get; private set; }
-    public Auction Auction { get; private set; }
+    public EntityGuId AuctionId { get; set; }
+    public int LotNumber { get;  set; }
+    public DateTime DatePlaced { get; set; }
+    public DateTime EndDate { get; set; }
+    public Vehicle.Vehicle? Vehicle { get; set; }
+    public Auction Auction { get;  set; }
 
     
     private Lot() {}

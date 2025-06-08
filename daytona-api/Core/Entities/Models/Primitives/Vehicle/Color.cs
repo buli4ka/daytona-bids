@@ -10,6 +10,6 @@ public class Color: BaseValueEntity<EntityIntId, string>
     }
     
     private Color() {}
-    public ICollection<Models.Vehicle.Vehicle> Vehicles { get; private set; } = new List<Models.Vehicle.Vehicle>();
+    public ICollection<Models.Vehicle.Vehicle> Vehicles { get; set; } = new List<Models.Vehicle.Vehicle>();
 
 }

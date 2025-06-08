@@ -4,28 +4,27 @@ using Core.Entities.Models.Vehicle;
 using Infrastructure.Persistence;
 using MediatR;
 
-namespace Application.Vehicles.Commands.CreateVehicle;
+namespace Application.Commands.Vehicle;
 
 
-public record CreateVehicleCommand : IRequest<Vehicle>
+public record CreateVehicleCommand : IRequest<Core.Entities.Models.Vehicle.Vehicle>
 {
     public string? Title { get; init; }
 
 }
 
-public class CreateVehicleCommandHandler: IRequestHandler<CreateVehicleCommand, Vehicle>
+public class CreateVehicleCommandHandler: IRequestHandler<CreateVehicleCommand, Core.Entities.Models.Vehicle.Vehicle>
 {
     private readonly IApplicationDbContext _context;
 
     public CreateVehicleCommandHandler(IApplicationDbContext context)
     {
         _context = context;
-        
     }
-    public async Task<Vehicle> Handle(CreateVehicleCommand request, CancellationToken cancellationToken)
+    public async Task<Core.Entities.Models.Vehicle.Vehicle> Handle(CreateVehicleCommand request, CancellationToken cancellationToken)
     {
 
-        var auction = await _context.Auctions.AddAsync(new Auction("mock auction"), cancellationToken);
+        var auction = await _context.Auctions.AddAsync(new Core.Entities.Models.Auction.Auction("mock auction"), cancellationToken);
          
         var lot = await _context.Lots.AddAsync(new Lot(auction.Entity.Id, 123456789, DateTime.Now.AddDays(1)), cancellationToken);
         
@@ -71,7 +70,7 @@ public class CreateVehicleCommandHandler: IRequestHandler<CreateVehicleCommand, 
         
         // Console.WriteLine(JsonSerializer.Serialize(vehicle));
         //
-        var vehicle = await _context.Vehicles.AddAsync( new Vehicle(
+        var vehicle = await _context.Vehicles.AddAsync( new Core.Entities.Models.Vehicle.Vehicle(
             "11111111111111111",
             2019,
             "image",

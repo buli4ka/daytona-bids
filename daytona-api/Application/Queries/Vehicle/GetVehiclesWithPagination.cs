@@ -4,11 +4,11 @@ using Core.Entities.Models.Vehicle;
 using Infrastructure.Persistence;
 using MediatR;
 
-namespace Application.Vehicles.Queries;
+namespace Application.Queries.Vehicle;
 
-public record GetVehiclesQuery(int PageNumber, int PageSize) : IRequest<List<Vehicle>>;
+public record GetVehiclesQuery(int PageNumber, int PageSize) : IRequest<List<Core.Entities.Models.Vehicle.Vehicle>>;
 
-public class GetVehiclesWithPagination: IRequestHandler<GetVehiclesQuery, List<Vehicle>>
+public class GetVehiclesWithPagination: IRequestHandler<GetVehiclesQuery, List<Core.Entities.Models.Vehicle.Vehicle>>
 {
     private readonly IApplicationDbContext _context;
 
@@ -17,7 +17,7 @@ public class GetVehiclesWithPagination: IRequestHandler<GetVehiclesQuery, List<V
         _context = context;
         
     }
-    public async Task<List<Vehicle>> Handle(GetVehiclesQuery request, CancellationToken cancellationToken)
+    public async Task<List<Core.Entities.Models.Vehicle.Vehicle>> Handle(GetVehiclesQuery request, CancellationToken cancellationToken)
     {
         var auction = new Auction("mock auction");
         var lot = new Lot(auction.Id, 123456789, DateTime.Now.AddDays(1));
@@ -30,7 +30,7 @@ public class GetVehiclesWithPagination: IRequestHandler<GetVehiclesQuery, List<V
         var fuel = new Fuel("Gas");
         var vehEngine = new Engine(8, 6400, fuel.Id );
         
-        var vehicle = new Vehicle(
+        var vehicle = new Core.Entities.Models.Vehicle.Vehicle(
             "123412121212121212",
             2019,
             "image",
@@ -47,6 +47,6 @@ public class GetVehiclesWithPagination: IRequestHandler<GetVehiclesQuery, List<V
         await _context.Vehicles.AddAsync(vehicle, cancellationToken);
         await _context.SaveChangesAsync(cancellationToken);
         
-        return await Task.FromResult(new List<Vehicle> {vehicle});
+        return await Task.FromResult(new List<Core.Entities.Models.Vehicle.Vehicle> {vehicle});
     }
 }

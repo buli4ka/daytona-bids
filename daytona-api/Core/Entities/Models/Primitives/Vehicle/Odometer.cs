@@ -12,8 +12,8 @@ public class Odometer: BaseValueEntity<EntityGuId, int>
     
     private Odometer() {}
     
-    public bool Actual { get; private set; }
+    public bool Actual { get; set; }
     
-    public EntityGuId VehicleId { get; private set; }
-    public Models.Vehicle.Vehicle Vehicle { get; private set; } = null!;
+    public EntityGuId VehicleId { get; set; }
+    public Models.Vehicle.Vehicle Vehicle { get; set; } = null!;
 }

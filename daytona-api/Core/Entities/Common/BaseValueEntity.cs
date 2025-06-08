@@ -9,5 +9,5 @@ public abstract class BaseValueEntity<TEntityId, T>: Entity<TEntityId>
         Value = value;
     }
     
-    public T Value { get; private set; }
+    public T Value { get; set; }
 }

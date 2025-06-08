@@ -1,6 +1,6 @@
 ﻿namespace Application.DTOs.Engine.Query;
 
-public class OdometerQuery
-{
-    
-}
+public sealed record OdometerQuery(
+    int? value,
+    bool? isActual
+);

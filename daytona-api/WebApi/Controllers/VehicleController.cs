@@ -1,4 +1,4 @@
-﻿using Application.Vehicles.Commands.CreateVehicle;
+﻿using Application.Commands.Vehicle;
 using MediatR;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;

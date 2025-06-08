@@ -1,6 +1,8 @@
 ﻿namespace Application.DTOs.Engine.Query;
 
-public class ConditionQuery
-{
-    
-}
+public sealed record ConditionQuery(
+    bool keys,
+    string? primaryDamage,
+    string? secondaryDamage,
+    string? highlights
+    );

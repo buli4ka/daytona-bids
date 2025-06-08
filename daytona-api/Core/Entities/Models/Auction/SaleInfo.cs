@@ -10,7 +10,7 @@ public class SaleInfo: Entity<EntityGuId>
         LotId = lotId;
     }
 
-    public EntityGuId LotId { get; private set; }
+    public EntityGuId LotId { get; set; }
     
-    public Lot Lot { get; private set; }
+    public Lot Lot { get; set; }
 }

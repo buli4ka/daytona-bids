@@ -10,7 +10,4 @@ public class Damage: BaseValueEntity<EntityIntId, string>
     public Damage(string value):base(value)
     {
     }
-    
-    public ICollection<Condition> Conditions { get; private set; } = new List<Condition>();
-    
 }

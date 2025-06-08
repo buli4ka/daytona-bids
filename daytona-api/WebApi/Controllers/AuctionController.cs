@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Application.DTOs.Auction.Commands;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers;
@@ -25,5 +26,12 @@ public class AuctionController: ControllerBase
         
         return Content(json, "application/json");
     }
-    
+
+
+    [HttpPost]
+    public async Task<IActionResult> CreateAuction([FromBody] CreateAuctionCommand command)
+    {
+        var auction = await _mediator.Send(command);
+        return Ok(auction);
+    }
 }
