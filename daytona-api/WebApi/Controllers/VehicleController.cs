@@ -1,5 +1,4 @@
-﻿using Application.Commands.Vehicle;
-using MediatR;
+﻿using MediatR;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,15 +14,5 @@ public class VehicleController : ControllerBase
     {
         _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
     }
-
-
-    [HttpPost]
-    public async Task<IActionResult> CreateVehicle()
-    {
-        var vehicle = await _mediator.Send(new CreateVehicleCommand());
-        return Ok(vehicle);
-    }
-    
-    
     
 }

@@ -1,10 +1,12 @@
 ﻿using Core.Entities.Identifiers;
 using Core.Entities.Models.Auction;
 using Core.Entities.Models.Primitives.Vehicle;
+using Core.Entities.Models.ValueObjects;
 using Core.Entities.Models.Vehicle;
 using Infrastructure.Configuration;
 using Infrastructure.Persistence.Converters;
 using Microsoft.EntityFrameworkCore;
+using Transmission = Core.Entities.Models.Primitives.Vehicle.Transmission;
 
 namespace Infrastructure.Persistence;
 
@@ -31,6 +33,11 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
     public DbSet<VehicleModel> VehicleModels { get; set; }
     public DbSet<Condition> Conditions { get; set; }
     public DbSet<Engine> Engines { get; set; }
+    
+    // public override DbSet<T> Set<T>() where T : class => base.Set<T>();
+    
+    public DbSet<T> Set<T>() where T : class => base.Set<T>();
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

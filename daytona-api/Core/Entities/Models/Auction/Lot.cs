@@ -13,7 +13,7 @@ public class Lot: Entity<EntityGuId>
     public Auction Auction { get;  set; }
 
     
-    private Lot() {}
+    public Lot() {}
 
     public Lot(
         EntityGuId auctionId,

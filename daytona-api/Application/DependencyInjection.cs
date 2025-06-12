@@ -13,6 +13,7 @@ public static class DependencyInjection
             cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
         });
         builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+        
     }
 
 }

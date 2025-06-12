@@ -7,5 +7,5 @@ public sealed record LotQuery(
     int lotNumber,
     DateTime datePlaced,
     DateTime endDate,
-    VehicleQuery vehicle
+    VehicleQuery? vehicle
     );

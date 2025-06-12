@@ -28,10 +28,27 @@ public class AuctionController: ControllerBase
     }
 
 
-    [HttpPost]
+    [HttpPost("CreateAuction")]
     public async Task<IActionResult> CreateAuction([FromBody] CreateAuctionCommand command)
     {
         var auction = await _mediator.Send(command);
         return Ok(auction);
+    }
+    
+    
+    [HttpPost("AddAuctionLot")]
+    public async Task<IActionResult> AddAuctionLot([FromBody] AddAuctionLot command)
+    {
+        try
+        {
+            var auction = await _mediator.Send(command);
+            return Ok(auction);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            return BadRequest(e.Message);
+        }
+       
     }
 }

@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Application.Queries.Auction;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApi.Controllers;
@@ -25,5 +26,15 @@ public class LotController: ControllerBase
         // dynamic result = JsonConvert.DeserializeObject(json);
         
         return Content(json, "application/json");
+    }
+    
+    [HttpGet("getByAuction/{auctionName}")]
+    public async Task<IActionResult> GetLotsByAuction(string auctionName)
+    {
+        var result = await _mediator.Send(new GetAuctionLotsQuery(auctionName));
+        
+        // dynamic result = JsonConvert.DeserializeObject(json);
+        
+        return Ok(result);
     }
 }

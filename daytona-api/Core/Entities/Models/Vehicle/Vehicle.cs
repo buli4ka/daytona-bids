@@ -2,13 +2,14 @@
 using Core.Entities.Identifiers;
 using Core.Entities.Models.Auction;
 using Core.Entities.Models.Primitives.Vehicle;
+using Core.Entities.Models.ValueObjects;
 
 namespace Core.Entities.Models.Vehicle;
 
 public class Vehicle: Entity<EntityGuId>
 {
     public string Vin { get; set; }
-    public string ImageUrl { get; set; }
+    public string? ImageUrl { get; set; }
     public short Year { get; set; }
     public EntityGuId LotId { get; set; }
 
@@ -36,7 +37,7 @@ public class Vehicle: Entity<EntityGuId>
     public IEnumerable<ImageUrl>? ImageUrls { get; set; } = new List<ImageUrl>();
 
 
-    private Vehicle() {}
+    public Vehicle() {}
     
     public Vehicle(
         string vin,

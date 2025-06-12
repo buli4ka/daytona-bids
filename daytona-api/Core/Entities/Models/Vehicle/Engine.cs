@@ -6,7 +6,7 @@ namespace Core.Entities.Models.Vehicle;
 
 public class Engine : Entity<EntityGuId>
 {
-    private Engine() { }
+    public Engine() { }
     
     public Engine(byte cylinderNumber, short volume, EntityIntId fuelId)
     {
@@ -22,4 +22,9 @@ public class Engine : Entity<EntityGuId>
     public Fuel Fuel { get; set; }
     public ICollection<Models.Vehicle.Vehicle> Vehicles { get; set; } = new List<Models.Vehicle.Vehicle>();
 
+    // public override bool Equals(object? obj)
+    // {
+    //     if(obj.CylinderNumber)
+    //     return base.Equals(obj);
+    // }
 }

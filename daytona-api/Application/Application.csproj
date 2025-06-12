@@ -17,8 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\Lot\Commands\" />
-    <Folder Include="Queries\Auction\" />
+    <Folder Include="Abstractions\" />
+    <Folder Include="Commands\Vehicle\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Queries\Vehicle\" />
   </ItemGroup>
 
 </Project>

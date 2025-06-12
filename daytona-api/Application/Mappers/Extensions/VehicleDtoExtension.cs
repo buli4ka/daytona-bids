@@ -21,11 +21,22 @@ public static class VehicleDtoExtension
             vehicle.Color.Value,
             vehicle.ImageUrls?.Select(image => image.Value).ToList(),
             new EngineQuery(vehicle.Engine.CylinderNumber, vehicle.Engine.Volume, vehicle.Engine.Fuel.Value),
-            new OdometerQuery(vehicle.Odometer?.Value, vehicle.Odometer?.Actual),
+            vehicle.Odometer != null ? new OdometerQuery(vehicle.Odometer.Value, vehicle.Odometer.Actual) : null,
             new ConditionQuery(vehicle.Condition != null && vehicle.Condition.Keys, vehicle.Condition?.PrimaryDamage?.Value,
-                vehicle.Condition?.SecondaryDamage?.Value, vehicle.Condition?.Highlights.Value)
+                vehicle.Condition?.SecondaryDamage?.Value, vehicle.Condition?.Highlights?.Value)
 
         );
     }
+
+    // public static Vehicle fromDto(this VehicleQuery vehicle)
+    // {
+    //     return new Vehicle
+    //     {
+    //         Vin = vehicle.vin,
+    //         // ImageUrl = vehicle.imageUrls.FirstOrDefault(),
+    //         Year = vehicle.year,
+    //         
+    //     }
+    // }
     
 }

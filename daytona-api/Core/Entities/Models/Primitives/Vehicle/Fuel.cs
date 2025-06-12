@@ -10,6 +10,9 @@ public class Fuel: BaseValueEntity<EntityIntId, string>
     {
     }
     
+    private Fuel() { } 
+
+    
     public ICollection<Engine> Engines { get; set; } = new List<Engine>();
 
 }

@@ -18,9 +18,9 @@ public class Condition: Entity<EntityGuId>
     public Vehicle Vehicle { get; set; }
     public Damage? PrimaryDamage { get; set; }
     public Damage? SecondaryDamage { get; set; }
-    public Highlights Highlights { get; set; }
+    public Highlights? Highlights { get; set; }
     
-    private Condition() {}
+    public Condition() {}
     
     public Condition(
         bool keys,

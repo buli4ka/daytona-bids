@@ -21,11 +21,16 @@ builder.AddInfrastructure();
 builder.AddApplication();
 
 
-builder.Services.AddControllers()
-    .AddJsonOptions(options =>
-    {
-        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
-    });
+builder.Services.AddControllers().AddJsonOptions(x =>
+    x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+
+// builder.Services.AddControllers()
+//     .AddJsonOptions(options =>
+//     {
+//         options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+//         options.JsonSerializerOptions.MaxDepth = 16; // Adjust the depth as needed
+//         options.JsonSerializerOptions.WriteIndented = true;
+//     });
 
 var app = builder.Build();
 

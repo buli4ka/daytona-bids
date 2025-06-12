@@ -19,12 +19,14 @@ public class VehicleConfiguration: IEntityTypeConfiguration<Vehicle>
         
         builder.Property(v => v.ImageUrl).IsRequired();
 
-        builder
-            .HasOne(v => v.Odometer)
-            .WithOne(o => o.Vehicle)
-            .HasForeignKey<Odometer>(o => o.VehicleId)
-            .OnDelete(DeleteBehavior.Cascade)
-            .IsRequired(false);
+        // builder
+        //     .HasOne(v => v.Odometer)
+        //     .WithOne(o => o.Vehicle)
+        //     .HasForeignKey<Odometer>(o => o.VehicleId)
+        //     .OnDelete(DeleteBehavior.Cascade)
+        //     .IsRequired(false);
+
+        builder.OwnsOne(v => v.Odometer);
 
         builder
             .HasOne(v => v.Condition)

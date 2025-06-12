@@ -1,5 +1,6 @@
 ﻿using Core.Entities.Models.Auction;
 using Core.Entities.Models.Primitives.Vehicle;
+using Core.Entities.Models.ValueObjects;
 using Core.Entities.Models.Vehicle;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,6 +23,8 @@ public interface IApplicationDbContext
     public DbSet<VehicleModel> VehicleModels { get; }
     public DbSet<Condition> Conditions { get; }
     public DbSet<Engine> Engines { get; }
+    
+    DbSet<T> Set<T>() where T : class;
     
     
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
